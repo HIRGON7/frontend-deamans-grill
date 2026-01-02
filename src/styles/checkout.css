@@ -1,0 +1,164 @@
+
+.checkout-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.checkout-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+
+.checkout-empty {
+  width: 300px;
+  background-color: #5b3a1e;
+  border-radius: 30px;
+  font-size: 17px;
+  color: #f3ecdd;
+  text-align: center;
+  font-family: monospace;
+  font-weight: bold;
+  padding: 20px;
+}
+
+
+.checkout-paper {
+  width: 500px;
+  padding: 24px 24px 30px;
+  border-radius: 18px;
+
+  background-color: #f3ecdd;
+
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 38px,
+    rgba(120, 150, 170, 0.45) 39px,
+    rgba(120, 150, 170, 0.45) 40px
+  );
+
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 30px;
+  color: #2b1f16;
+
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
+}
+
+
+.checkout-header {
+  text-align: center;
+  font-size: 15px;
+  color: #5b3a1e;
+}
+
+
+.checkout-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 40px;
+}
+
+.item-name {
+  flex: 1;
+  font-weight: 600;
+  color: #2b1f16 !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-price {
+  min-width: 70px;
+  text-align: right;
+  color: #b08d32 !important;
+  font-weight: 600;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #7a2d1b;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.remove-btn:hover {
+  text-decoration: line-through;
+}
+
+
+.checkout-divider {
+  text-align: center;
+  color: #5b3a1e;
+  opacity: 0.75;
+}
+
+.checkout-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: #3b2615;
+}
+
+.checkout-total span:last-child {
+  color: #c19a3f;
+}
+
+.place-order-btn {
+  margin-top: 12px;
+  width: 100%;
+  height: 44px;
+
+  font-weight: bold;
+  border-radius: 8px;
+  border: 2px solid #5b3a1e;
+  background-color: #c19a3f;
+  color: #3b2615;
+
+  font-family: inherit;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+.place-order-btn:hover {
+    border-color: #2b1f16;
+  transform: scale(1.05);
+  filter: brightness(1.15);
+}
+
+
+.bell-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.bell {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+   filter: drop-shadow(0 0 18px rgba(0,0,0,0.6));
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.bell:active {
+  transform: scale(0.9);
+}
+
+
+
+
+.bell:hover {
+  
+  filter: drop-shadow(0 0 26px rgba(196,106,43,1));
+}
+

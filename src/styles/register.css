@@ -1,0 +1,202 @@
+
+.auth-page {
+   width: 1000vw;
+  position: relative;
+  min-height: 100%;
+  background-image: url("../images/liquid4.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #EED9B7;
+  font-family: "Georgia", serif;
+  padding: 40px 20px;
+  overflow: hidden;
+  filter: brightness();
+}
+
+
+.auth-page h2 {
+  font-size: 36px;
+  letter-spacing: 4px;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+  color: #EED9B7;
+  text-shadow: 0 0 12px rgba(169, 113, 66, 0.7);
+}
+.auth-page h3{
+    font-size: 23px;
+    
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 420px;
+  background:
+    linear-gradient(
+      rgba(60, 30, 15, 0.95),
+      rgba(35, 18, 8, 0.98)
+    );
+  border: 2px solid #6C3A1A;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow:
+    0 0 45px rgba(0, 0, 0, 0.9),
+    inset 0 0 25px rgba(255, 180, 120, 0.08);
+}
+
+
+.auth-form input {
+  width: 100%;
+  padding: 14px 12px;
+  margin-bottom: 14px;
+  background: #1F1208;
+  border: 1px solid #6C3A1A;
+  border-radius: 6px;
+  color: #EED9B7;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.auth-form input::placeholder {
+  color: #A97142;
+}
+
+.auth-form input:focus {
+  border-color: #FFD27D;
+  box-shadow: 0 0 12px rgba(255, 210, 125, 0.45);
+  background: #26160B;
+}
+
+
+.auth-form button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(145deg, #8B4513, #5A2E12);
+  border: none;
+  border-radius: 6px;
+  color: #EED9B7;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 12px;
+  text-transform: uppercase;
+}
+
+.auth-form button:hover {
+  background: linear-gradient(145deg, #A97142, #6C3A1A);
+  box-shadow: 0 0 18px rgba(169, 113, 66, 0.65);
+}
+
+.auth-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+.auth-page p {
+  margin-top: 18px;
+  font-size: 14px;
+  text-align: center;
+  color: #EED9B7;
+  font-size: 20px;
+}
+
+
+
+.auth-page a {
+    font-size:20px;
+  color: orange;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.auth-page a:hover {
+  color: #FFD27D;
+  text-shadow: 0 0 8px rgba(255, 210, 125, 0.7);
+}
+
+
+.embers {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.embers::before,
+.embers::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-repeat: repeat;
+  background-size: 220px 220px;
+  animation: emberFloat 38s linear infinite;
+  opacity: 0.4;
+}
+
+.embers::before {
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.6) 3px, transparent 3px),
+    radial-gradient(circle, rgba(219, 217, 216, 0.5) 2.5px, transparent 3px),
+    radial-gradient(circle, rgba(246, 246, 246, 0.4) 2px, transparent 2px);
+}
+
+.embers::after {
+  background-size: 300px 300px;
+  animation-duration: 60s;
+  opacity: 0.25;
+}
+
+
+.auth-page::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.015) 0px,
+      rgba(255, 255, 255, 0.015) 1px,
+      transparent 2px,
+      transparent 6px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.05) 0px,
+      rgba(0, 0, 0, 0.05) 1px,
+      transparent 2px,
+      transparent 8px
+    );
+}
+
+
+@keyframes emberFloat {
+  from { transform: translateY(0); }
+  to { transform: translateY(-320px); }
+}
+
+
+.auth-page > *:not(.embers) {
+  position: relative;
+  z-index: 2;
+}
+
+
+@media (max-width: 480px) {
+  .auth-page h2 {
+    font-size: 28px;
+  }
+
+  .auth-form {
+    padding: 24px;
+  }
+}
+
+

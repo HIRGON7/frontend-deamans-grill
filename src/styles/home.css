@@ -1,0 +1,59 @@
+.home-cover {
+  
+  position: relative;
+  width: 1000vw;
+  min-height: 100vh;
+  z-index: 10;
+  overflow: hidden;
+}
+
+
+.flag-layout {
+  display: grid;
+  grid-template-columns: 
+    minmax(100px,120px)
+    minmax(100px,160px)
+    minmax(100px,120px)
+    1fr
+    minmax(100px,120px)
+    minmax(100px,160px)
+    minmax(100px,120px);
+
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  z-index: 11;
+}
+
+
+.red {
+  background-position: center;
+  background-image: url("../images/navbar2.png");
+  background-size: contain;
+ 
+}
+
+.white {
+  background-image: url("../images/theback.png");
+  background-size: contain;
+  background-position: center;
+}
+
+.center-area {
+  background-image: url("../images/gameback2.jpg");
+  background-repeat: round;
+  
+ 
+  padding-top: 80px;
+}
+
+@media (max-width: 1500px) {
+  .flag-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  .red,
+  .white {
+    display: none !important;
+  }
+}

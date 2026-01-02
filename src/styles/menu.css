@@ -1,0 +1,268 @@
+
+
+
+.add-to-cart{
+  justify-content: center;
+  margin: auto;
+  align-self: center;
+  align-items: center;
+  display: block;
+  font-weight: bolder;
+transition: 0.3s ease-in-out;
+  background-color: #572D0C;
+}
+.add-to-cart:hover{
+  transform: scale(1.05);
+  background-color: #B87333;
+  border-color: transparent;
+}
+.menu-page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 120px;
+  overflow-x: hidden;
+}
+
+
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu-page{
+
+width:1010vw;
+background-image: url("../images/menuback5.jpg");
+
+}
+.menu-mini-nav {
+  margin: auto;
+  width: 945px;
+  position: sticky;
+  top: 80px;
+  z-index: 50;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 80px;
+  justify-content: center;
+  padding: 14px 20px;
+  background: rgba(155, 116, 74,0.2);
+  border-radius: 30px;
+  backdrop-filter: blur(6px);
+}
+
+.menu-mini-nav button {
+  padding: 10px 18px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 900;
+  letter-spacing: 1px;
+  border-radius: 12px;
+
+  background: linear-gradient(90deg, #4D2D18, #000, #7f5539);
+  background-size: 300% 300%;
+  transition: 0.3s ease;
+}
+
+.menu-mini-nav button:hover {
+  transform: scale(1.05);
+  background-position: 100%;
+}
+
+
+
+
+.menu-section {
+  max-width: 950px;
+  margin: 70px auto;
+  background-image: url("../images/back16.jpg");
+  padding: 26px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.7);
+}
+
+.menu-title {
+  width: 250px;
+  margin: auto;
+  border-radius: 30px;
+  background-color: rgba(47, 30, 23);
+  color: #FFF2E0;
+  font-weight: 900;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.menu-image-box img {
+  width: 100%;
+ 
+  max-height: 350px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+
+
+
+.menu-grid {
+  display: grid;
+  
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.menu-grid.more-than-6 {
+  
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+@media (max-width: 700px) {
+  .menu-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+
+
+
+.menu-item {
+  background: #2F1E17;
+  padding: 14px;
+  border-radius: 10px;
+}
+
+.item-name {
+  color: #FFF2E0;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.item-desc {
+  color: #E0CFC2;
+  opacity: 0.95;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.item-price {
+  color: #FFC857;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+
+
+
+
+
+@media (max-width: 700px) {
+
+  
+  .menu-mini-nav {
+    top: 55px !important;
+    padding: 10px !important;
+    gap: 8px !important;
+  }
+
+  .menu-mini-nav button {
+    padding: 8px 12px !important;
+    font-size: 0.85rem !important;
+  }
+
+
+  .menu-section {
+    margin: 45px auto;
+    padding: 18px;
+    max-width: 92%;
+  }
+
+
+  .menu-image-box img {
+    max-height: 260px;
+  }
+
+
+  .menu-item {
+    min-height: 130px;
+    padding: 18px;
+  }
+
+
+  .blob.big {
+    width: 240px;
+    height: 240px;
+    filter: blur(35px);
+  }
+
+  .blob.small {
+    width: 80px;
+    height: 80px;
+    filter: blur(20px);
+  }
+}
+
+
+@media (max-width: 420px) {
+  .menu-mini-nav { top: 48px !important; }
+
+  .menu-item { padding: 14px; }
+
+  .item-name { font-size: 1rem; }
+  .item-desc { font-size: 0.85rem; }
+  .item-price { font-size: 0.9rem; }
+
+  .blob.big { width: 170px; height: 170px; }
+  .blob.small { width: 55px; height: 55px; }
+}
+/* ================= WOODY SNAKE ================= */
+
+.woody-snake-wrapper {
+  position: sticky;
+  top: 110px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.woody-snake {
+  margin: 30px;
+  
+  width: 140px;
+  height: auto;
+  cursor: pointer;
+  pointer-events: auto;
+  filter: drop-shadow(0 0 18px rgba(0,0,0,0.6));
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.woody-snake:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 26px rgba(196,106,43,0.85));
+}
+
+.woody-snake:active {
+  transform: scale(0.95);
+}
