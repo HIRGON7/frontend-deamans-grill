@@ -154,7 +154,7 @@ background-image: url("../images/menuback5.jpg");
 }
 
 .item-name {
-  color: #C2AE8D;
+  color: #C2AE8D !important;
   font-weight: 900;
   margin-bottom: 5px;
 }
