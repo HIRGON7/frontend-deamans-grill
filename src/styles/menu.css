@@ -158,7 +158,10 @@ background-image: url("../images/menuback5.jpg");
   font-weight: 900;
   margin-bottom: 5px;
 }
-
+.item-name h3{
+ color: #C2AE8D !important;
+  
+}
 .item-desc {
   color: #E0CFC2;
   opacity: 0.95;
